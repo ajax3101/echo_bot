@@ -12,3 +12,5 @@ dp = Dispacher(bot)
 
 # Эхо бот
 @dp.messages_handler()
+async def echo (message: type.Message):
+    
