@@ -13,4 +13,9 @@ dp = Dispacher(bot)
 # Эхо бот
 @dp.messages_handler()
 async def echo (message: type.Message):
+    await message.answer(message.text)
+
+#запускаем поллинг
+if __name__=='__main__':
+    executor.start_polling(dp, skip_updates=True)
     
